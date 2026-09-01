@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dibu — Pide un dibujo. Coloréalo. App de colorear para iPad y iPhone</title>
+<meta name="description" content="Dibu es la app de colorear para niños y adultos en iPad y iPhone: describe lo que quieres, la lámina se genera en tu dispositivo con Apple Intelligence y la coloreas por toque. Sin anuncios, sin cuentas, sin rastreo.">
+<link rel="canonical" href="https://dibu.softapp.tech/">
+<link rel="alternate" hreflang="es" href="https://dibu.softapp.tech/">
+<link rel="alternate" hreflang="en" href="https://dibu.softapp.tech/en/">
+<link rel="alternate" hreflang="x-default" href="https://dibu.softapp.tech/">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#fffcf4" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#16151b" media="(prefers-color-scheme: dark)">
+<!-- TODO: sustituir 0000000000 por el id real de la app en App Store Connect -->
+<meta name="apple-itunes-app" content="app-id=0000000000">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23ffd23f'/%3E%3Cpath d='M12 50 L36 26 L44 34 L20 58Z' fill='%23ff6a5b' stroke='%23141414' stroke-width='4' stroke-linejoin='round'/%3E%3Cpath d='M8 56 L12 50 L20 58Z' fill='%23141414'/%3E%3Cpath d='M36 26 L42 14 L54 24 L44 34Z' fill='%23fff' stroke='%23141414' stroke-width='4' stroke-linejoin='round'/%3E%3C/svg%3E">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Dibu">
+<meta property="og:title" content="Dibu — Pide un dibujo. Coloréalo.">
+<meta property="og:description" content="Describe lo que quieres colorear y la lámina se genera en tu iPad, sin subir nada a ningún servidor. Relleno por toque, Apple Pencil, sin anuncios y sin rastreo.">
+<meta property="og:url" content="https://dibu.softapp.tech/">
+<meta property="og:image" content="https://dibu.softapp.tech/img/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="es_ES">
+<meta property="og:locale:alternate" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Dibu — Pide un dibujo. Coloréalo.">
+<meta name="twitter:description" content="Describe lo que quieres colorear y la lámina se genera en tu iPad, sin subir nada a ningún servidor. Sin anuncios y sin rastreo.">
+<meta name="twitter:image" content="https://dibu.softapp.tech/img/og.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito:wght@400;600;700;800&display=swap">
+<link rel="stylesheet" href="css/dibu.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "MobileApplication",
+      "name": "Dibu",
+      "url": "https://dibu.softapp.tech/",
+      "image": "https://dibu.softapp.tech/img/og.png",
+      "description": "App de colorear para niños y adultos en iPad y iPhone. Describe lo que quieres y la lámina se genera en tu dispositivo con Apple Intelligence. Sin anuncios, sin cuentas, sin rastreo.",
+      "operatingSystem": "iOS, iPadOS",
+      "applicationCategory": "GameApplication",
+      "inLanguage": "es",
+      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "EUR" },
+      "author": { "@type": "Organization", "name": "SoftApp Solutions LLC", "email": "soporte@softapp.tech", "url": "https://dibu.softapp.tech/" }
+    },
+    { "@type": "WebSite", "name": "Dibu", "url": "https://dibu.softapp.tech/", "inLanguage": "es" }
+  ]
+}
+</script>
+</head>
+<body>
+<a class="skip" href="#main">Saltar al contenido</a>
+
+<header class="nav">
+  <div class="wrap">
+    <a class="logo" href="/" aria-label="Dibu, inicio">Dibu
+      <svg viewBox="0 0 100 10" preserveAspectRatio="none" aria-hidden="true"><path d="M2 6 Q 25 1 50 6 T 98 4" fill="none" stroke="#ff6a5b" stroke-width="4" stroke-linecap="round"/></svg>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#funciones">Funciones</a></li>
+      <li><a href="#precios">Precios</a></li>
+      <li><a href="soporte.html">Soporte</a></li>
+    </ul>
+    <a class="btn btn-ink nav-cta" href="https://apps.apple.com/app/id0000000000" data-todo="app-store-id">Descargar en el App Store</a>
+    <a class="lang" href="en/" hreflang="en" lang="en" aria-label="English version">EN</a>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- ================= HERO ================= -->
+<section class="hero">
+  <div class="wrap">
+    <div class="hero-copy">
+      <h1>Pide un dibujo.<br><span class="hl">Coloréalo.</span></h1>
+      <p class="lead">Describe lo que quieres colorear y Dibu lo dibuja en tu iPad al momento. Luego toca, rellena y guarda.</p>
+      <div class="hero-actions">
+        <a class="badge" href="https://apps.apple.com/app/id0000000000" data-todo="app-store-id" aria-label="Descargar Dibu en el App Store">
+          <svg viewBox="0 0 190 56" width="190" height="56" role="img" aria-hidden="true">
+            <rect width="190" height="56" rx="10" fill="#111"/>
+            <path d="M40.6 29.4c0-3.9 3.2-5.8 3.4-5.9-1.9-2.7-4.7-3.1-5.7-3.1-2.4-.3-4.8 1.4-6 1.4-1.2 0-3.1-1.4-5.2-1.3-2.6 0-5.1 1.6-6.5 4-2.8 4.8-.7 12 2 15.9 1.3 1.9 2.9 4.1 5 4 2-.1 2.8-1.3 5.2-1.3s3.1 1.3 5.2 1.2c2.2 0 3.5-2 4.8-3.9 1.5-2.2 2.1-4.4 2.2-4.5-.1 0-4.4-1.7-4.4-6.5zM36.7 17.8c1.1-1.3 1.8-3.1 1.6-5-1.6.1-3.4 1.1-4.6 2.4-1 1.1-1.9 3-1.6 4.8 1.7.1 3.5-.9 4.6-2.2z" fill="#fff"/>
+            <text x="56" y="23" fill="#fff" font-family="-apple-system,'Helvetica Neue',Helvetica,Arial,sans-serif" font-size="11" letter-spacing=".2">Descargar en el</text>
+            <text x="56" y="43" fill="#fff" font-family="-apple-system,'Helvetica Neue',Helvetica,Arial,sans-serif" font-size="22" font-weight="600" letter-spacing="-.4">App Store</text>
+          </svg>
+        </a>
+        <span class="hint" aria-hidden="true">
+          <svg viewBox="0 0 40 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M2 14 C 12 2, 22 22, 34 10"/><path d="M28 8 L 35 9 L 33 16"/></svg>
+          Prueba: toca el dibujo
+        </span>
+      </div>
+    </div>
+
+    <div class="sheet-wrap">
+      <svg class="clip" viewBox="0 0 36 70" aria-hidden="true"><path d="M8 20 v34 a10 10 0 0 0 20 0 V14 a7 7 0 0 0 -14 0 v36 a3 3 0 0 0 6 0 V22" fill="none" stroke="#ff6a5b" stroke-width="5" stroke-linecap="round"/><path d="M8 20 v34 a10 10 0 0 0 20 0 V14 a7 7 0 0 0 -14 0 v36 a3 3 0 0 0 6 0 V22" fill="none" stroke="#141414" stroke-width="1.5" stroke-linecap="round"/></svg>
+      <div class="sheet">
+        <canvas id="lamina" width="1200" height="1200" data-src="img/seahorse-line.png" role="img" aria-label="Lámina de un caballito de mar astronauta para colorear. Toca una zona para rellenarla con la cera elegida."></canvas>
+        <div class="loading" aria-hidden="true">Sacando punta a las ceras…</div>
+      </div>
+      <div class="tools">
+        <ul class="ceras" role="group" aria-label="Ceras">
+          <li><button class="cera" type="button" style="--c:#2f6cf0" data-color="#2f6cf0" aria-label="Azul cera" aria-pressed="true"></button></li>
+          <li><button class="cera" type="button" style="--c:#ff6a5b" data-color="#ff6a5b" aria-label="Coral" aria-pressed="false"></button></li>
+          <li><button class="cera" type="button" style="--c:#ffd23f" data-color="#ffd23f" aria-label="Amarillo" aria-pressed="false"></button></li>
+          <li><button class="cera" type="button" style="--c:#3fb562" data-color="#3fb562" aria-label="Verde hierba" aria-pressed="false"></button></li>
+          <li><button class="cera" type="button" style="--c:#8b5cf6" data-color="#8b5cf6" aria-label="Morado" aria-pressed="false"></button></li>
+          <li><button class="cera" type="button" style="--c:#ff7fbf" data-color="#ff7fbf" aria-label="Rosa" aria-pressed="false"></button></li>
+          <li><button class="cera" type="button" style="--c:#ff9a2e" data-color="#ff9a2e" aria-label="Naranja" aria-pressed="false"></button></li>
+          <li><button class="cera" type="button" style="--c:#26c2c9" data-color="#26c2c9" aria-label="Turquesa" aria-pressed="false"></button></li>
+          <li><button class="cera" type="button" style="--c:#7cc6ff" data-color="#7cc6ff" aria-label="Azul cielo" aria-pressed="false"></button></li>
+          <li><button class="cera" type="button" style="--c:#a66a3d" data-color="#a66a3d" aria-label="Marrón" aria-pressed="false"></button></li>
+        </ul>
+        <div class="tool-row">
+          <button class="btn" type="button" id="borrar">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 7h16M10 11v6M14 11v6M6 7l1 13h10l1-13M9 7V4h6v3"/></svg>
+            Borrar todo
+          </button>
+          <button class="btn btn-yellow" type="button" id="sorpresa">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l1.8 4.6L18 9l-4.2 1.4L12 15l-1.8-4.6L6 9l4.2-1.4zM5 16l.8 2 2 .8-2 .8L5 21l-.8-1.4-2-.8 2-.8zM18 15l.8 2 2 .8-2 .8-.8 2-.8-2-2-.8 2-.8z"/></svg>
+            Sorpréndeme
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= LÁMINAS MÁGICAS ================= -->
+<section class="section magic" id="magicas">
+  <div class="wrap">
+    <div>
+      <div class="section-head">
+        <span class="kicker" style="--k:var(--morado)">Láminas mágicas</span>
+        <h2>Lo que imagines, listo para colorear</h2>
+        <p>Escribe o dicta lo que te apetece —«un caballito de mar astronauta», «una excavadora con alas»— y Dibu dibuja la lámina en segundos.</p>
+      </div>
+      <ul class="checks">
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10" fill="#8b5cf6" stroke="#141414" stroke-width="2"/><path d="M7 12.5l3.2 3.2L17 9" fill="none" stroke="#141414" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>Se genera en el propio iPad o iPhone con Apple Intelligence.</li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10" fill="#26c2c9" stroke="#141414" stroke-width="2"/><path d="M7 12.5l3.2 3.2L17 9" fill="none" stroke="#141414" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>No se sube nada a ningún servidor: ni el texto ni el dibujo.</li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10" fill="#ffd23f" stroke="#141414" stroke-width="2"/><path d="M7 12.5l3.2 3.2L17 9" fill="none" stroke="#141414" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>Funciona sin conexión, en el coche o en el avión.</li>
+      </ul>
+      <p class="note">Las láminas mágicas requieren un iPhone 15 Pro o posterior, o un iPad con chip M1 o A17 Pro. En el resto de dispositivos, Dibu funciona igual con los packs de láminas y «Colorea tu foto».</p>
+    </div>
+    <div class="magic-demo" aria-hidden="true">
+      <div class="prompt"><span>un caballito de mar astronauta</span><span class="caret"></span>
+        <svg class="mic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5 11a7 7 0 0 0 14 0M12 18v3M9 21h6"/></svg>
+      </div>
+      <svg class="arrow-down" viewBox="0 0 56 56" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><path d="M28 6 C 20 20, 36 30, 28 48"/><path d="M18 40 L28 49 L37 39"/></svg>
+      <div class="magic-result">
+        <img src="img/seahorse-900.png" width="900" height="900" alt="" loading="lazy">
+        <span class="stamp">Hecha en tu iPad</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FUNCIONES ================= -->
+<section class="section" id="funciones">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="kicker" style="--k:var(--azul)">Funciones</span>
+      <h2>Todo lo que hace falta. Nada que estorbe.</h2>
+    </div>
+    <div class="features">
+      <article class="card">
+        <div class="icon" style="--c:var(--amarillo)"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M13 19V8a2.5 2.5 0 0 1 5 0v9"/><path d="M18 16a2.5 2.5 0 0 1 5 0v3"/><path d="M23 18.5a2.5 2.5 0 0 1 5 0V23c0 4-3 7-8 7h-3c-3 0-5-1.5-7-4l-3-4.5a2.3 2.3 0 0 1 3.6-3L13 21"/><path d="M6 6 4 4M9 3V1M3 9H1"/></svg></div>
+        <h3>Relleno por toque</h3>
+        <p>Toca una zona y se rellena sola, sin salirse. Pensado para dedos pequeños y para colorear rápido.</p>
+      </article>
+      <article class="card">
+        <div class="icon" style="--c:var(--coral)"><svg viewBox="0 0 32 32" aria-hidden="true"><rect x="4" y="9" width="24" height="18" rx="4"/><circle cx="16" cy="18" r="5"/><path d="M11 9l2-4h6l2 4"/></svg></div>
+        <h3>Colorea tu foto</h3>
+        <p>Haz una foto a tu peluche, a tu casa o a tu gato y Dibu la convierte en lámina de línea para colorear.</p>
+      </article>
+      <article class="card">
+        <div class="icon" style="--c:var(--verde)"><svg viewBox="0 0 32 32" aria-hidden="true"><rect x="9" y="3" width="19" height="22" rx="3"/><path d="M4 10v16a3 3 0 0 0 3 3h15"/><path d="M14 10h9M14 15h9"/></svg></div>
+        <h3>Packs de láminas</h3>
+        <p>Mar, dinosaurios, granja, espacio, vehículos y mandalas para adultos. Dibujadas a mano, con gusto.</p>
+      </article>
+      <article class="card">
+        <div class="icon" style="--c:var(--cielo)"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M21 4l7 7L11 28H4v-7z"/><path d="M17 8l7 7"/><path d="M4 28l4-4"/></svg></div>
+        <h3>Apple Pencil e iPad</h3>
+        <p>Pinceles con presión e inclinación, zoom sin límite y paleta a un lado. En iPad, Dibu es una mesa de dibujo.</p>
+      </article>
+      <article class="card">
+        <div class="icon" style="--c:var(--morado)"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M9 12V4h14v8"/><rect x="4" y="12" width="24" height="11" rx="3"/><path d="M9 19h14v9H9z"/><path d="M12 23h8"/></svg></div>
+        <h3>Imprimir y guardar</h3>
+        <p>Imprime la lámina en blanco o el dibujo acabado con AirPrint, y guárdalo en Fotos con un toque.</p>
+      </article>
+      <article class="card">
+        <div class="icon" style="--c:var(--rosa)"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 3l11 4v9c0 7-5 11-11 13C10 27 5 23 5 16V7z"/><path d="M11 16l3.5 3.5L21 13"/></svg></div>
+        <h3>Sin anuncios y sin rastreo</h3>
+        <p>Ni un banner, ni un vídeo que saltar, ni un dato que recoger. Solo dibujar.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= GALERÍA ================= -->
+<section class="section" id="galeria" style="padding-top:0">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="kicker" style="--k:var(--verde)">Galería</span>
+      <h2>Láminas con las que apetece empezar</h2>
+      <p>Pasa el ratón por encima o tócalas para verlas con color.</p>
+    </div>
+    <div class="gallery">
+      <figure tabindex="0" style="--tag:var(--verde);--blobs:radial-gradient(circle at 45% 55%,#3fb562 0 30%,transparent 31%),radial-gradient(circle at 75% 25%,#ffd23f 0 14%,transparent 15%),radial-gradient(circle at 20% 20%,#7cc6ff 0 22%,transparent 23%),radial-gradient(circle at 25% 85%,#a66a3d 0 40%,transparent 41%)">
+        <div class="art"><img src="img/dino-900.png" width="900" height="900" alt="Lámina de un dinosaurio para colorear" loading="lazy"></div>
+        <figcaption>Dinosaurio <small>Dinos</small></figcaption>
+      </figure>
+      <figure tabindex="0" style="--tag:var(--cielo);--blobs:radial-gradient(circle at 50% 50%,#ffd23f 0 24%,transparent 25%),radial-gradient(circle at 50% 50%,#2f6cf0 0 100%)">
+        <div class="art"><img src="img/submarine-900.png" width="900" height="900" alt="Lámina de un submarino para colorear" loading="lazy"></div>
+        <figcaption>Submarino <small>Mar</small></figcaption>
+      </figure>
+      <figure tabindex="0" style="--tag:var(--naranja);--blobs:radial-gradient(circle at 50% 45%,#a66a3d 0 28%,transparent 29%),radial-gradient(circle at 50% 30%,#ff9a2e 0 12%,transparent 13%),radial-gradient(circle at 50% 50%,#8b5cf6 0 100%)">
+        <div class="art"><img src="img/owl-900.png" width="900" height="900" alt="Lámina de un búho para colorear" loading="lazy"></div>
+        <figcaption>Búho <small>Granja</small></figcaption>
+      </figure>
+      <figure tabindex="0" style="--tag:var(--rosa);--blobs:radial-gradient(circle at 50% 50%,#ffd23f 0 12%,#ff7fbf 12% 24%,#8b5cf6 24% 36%,#26c2c9 36% 48%,#ff6a5b 48% 100%)">
+        <div class="art"><img src="img/mandala-900.png" width="900" height="900" alt="Lámina de un mandala para colorear" loading="lazy"></div>
+        <figcaption>Mandala <small>Adultos</small></figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PRECIOS ================= -->
+<section class="section" id="precios" style="padding-top:0">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="kicker" style="--k:var(--amarillo)">Precios</span>
+      <h2>Gratis para empezar. Los packs, sueltos.</h2>
+    </div>
+    <div class="pricing two">
+      <article class="plan">
+        <h3>Gratis</h3>
+        <p class="price">0 €<small>para siempre</small></p>
+        <ul>
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10" fill="#3fb562" stroke="#141414" stroke-width="2"/><path d="M7 12.5l3.2 3.2L17 9" fill="none" stroke="#141414" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>12 láminas</li>
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10" fill="#3fb562" stroke="#141414" stroke-width="2"/><path d="M7 12.5l3.2 3.2L17 9" fill="none" stroke="#141414" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>Todas las herramientas</li>
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10" fill="#3fb562" stroke="#141414" stroke-width="2"/><path d="M7 12.5l3.2 3.2L17 9" fill="none" stroke="#141414" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>Relleno por toque</li>
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10" fill="#3fb562" stroke="#141414" stroke-width="2"/><path d="M7 12.5l3.2 3.2L17 9" fill="none" stroke="#141414" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>Colorea tu foto</li>
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10" fill="#3fb562" stroke="#141414" stroke-width="2"/><path d="M7 12.5l3.2 3.2L17 9" fill="none" stroke="#141414" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>1 lámina mágica al día</li>
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10" fill="#3fb562" stroke="#141414" stroke-width="2"/><path d="M7 12.5l3.2 3.2L17 9" fill="none" stroke="#141414" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>Guardar e imprimir</li>
+        </ul>
+        <a class="btn" href="https://apps.apple.com/app/id0000000000" data-todo="app-store-id">Descargar gratis</a>
+      </article>
+      <article class="plan featured">
+        <span class="tag">Solo pagas lo que usas</span>
+        <h3>Packs</h3>
+        <p class="price">desde 0,99 €<small>por pack de 8 láminas, tuyo para siempre</small></p>
+        <ul>
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10" fill="#fff" stroke="#141414" stroke-width="2"/><path d="M7 12.5l3.2 3.2L17 9" fill="none" stroke="#141414" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>Cada pack se compra suelto, sin ataduras</li>
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10" fill="#fff" stroke="#141414" stroke-width="2"/><path d="M7 12.5l3.2 3.2L17 9" fill="none" stroke="#141414" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>Tuyo para siempre, en todos tus dispositivos</li>
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10" fill="#fff" stroke="#141414" stroke-width="2"/><path d="M7 12.5l3.2 3.2L17 9" fill="none" stroke="#141414" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>Compartir en familia</li>
+        </ul>
+        <ul class="pack-chips" aria-label="Packs disponibles">
+          <li style="--c:var(--cielo)">Mar</li>
+          <li style="--c:var(--verde)">Dinosaurios</li>
+          <li style="--c:var(--amarillo)">Granja</li>
+          <li style="--c:var(--morado)">Espacio</li>
+          <li style="--c:var(--naranja)">Vehículos</li>
+          <li style="--c:var(--rosa)">Mandalas</li>
+          <li style="--c:var(--coral)">Navidad</li>
+          <li style="--c:var(--turquesa)">Halloween</li>
+        </ul>
+        <p class="magic-pack"><strong>Magia sin límite</strong> · quita el límite diario de láminas mágicas · <strong>2,99 €</strong></p>
+        <a class="btn" href="https://apps.apple.com/app/id0000000000" data-todo="app-store-id">Ver packs</a>
+      </article>
+    </div>
+    <p class="pricing-note">Compras a través de la App Store. Pago único por pack. Sin suscripciones. Sin anuncios.</p>
+  </div>
+</section>
+
+<!-- ================= FAMILIAS ================= -->
+<section class="section family" id="familias">
+  <div class="wrap">
+    <div>
+      <div class="section-head">
+        <span class="kicker" style="--k:var(--coral)">Para familias</span>
+        <h2>Tranquilidad de serie</h2>
+        <p>Dibu está hecha para dejársela a un niño sin tener que vigilar la pantalla. No hay nada dentro que no sea dibujar.</p>
+      </div>
+    </div>
+    <ul class="family-list">
+      <li><span class="dot" style="--c:var(--amarillo)"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4 4L19 7"/></svg></span>Sin anuncios</li>
+      <li><span class="dot" style="--c:var(--coral)"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4 4L19 7"/></svg></span>Sin cuentas ni registros</li>
+      <li><span class="dot" style="--c:var(--verde)"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4 4L19 7"/></svg></span>Sin rastreo de ningún tipo</li>
+      <li><span class="dot" style="--c:var(--azul)"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4 4L19 7"/></svg></span>Puerta parental antes de compartir y comprar</li>
+      <li><span class="dot" style="--c:var(--morado)"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4 4L19 7"/></svg></span>Los dibujos se quedan en tu iCloud</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ================= CTA ================= -->
+<section class="cta">
+  <div class="wrap">
+    <h2>¿Empezamos a colorear?</h2>
+    <p>Gratis en el App Store, para iPad y iPhone.</p>
+    <a class="badge" href="https://apps.apple.com/app/id0000000000" data-todo="app-store-id" aria-label="Descargar Dibu en el App Store">
+      <svg viewBox="0 0 190 56" width="190" height="56" aria-hidden="true">
+        <rect width="190" height="56" rx="10" fill="#111"/>
+        <path d="M40.6 29.4c0-3.9 3.2-5.8 3.4-5.9-1.9-2.7-4.7-3.1-5.7-3.1-2.4-.3-4.8 1.4-6 1.4-1.2 0-3.1-1.4-5.2-1.3-2.6 0-5.1 1.6-6.5 4-2.8 4.8-.7 12 2 15.9 1.3 1.9 2.9 4.1 5 4 2-.1 2.8-1.3 5.2-1.3s3.1 1.3 5.2 1.2c2.2 0 3.5-2 4.8-3.9 1.5-2.2 2.1-4.4 2.2-4.5-.1 0-4.4-1.7-4.4-6.5zM36.7 17.8c1.1-1.3 1.8-3.1 1.6-5-1.6.1-3.4 1.1-4.6 2.4-1 1.1-1.9 3-1.6 4.8 1.7.1 3.5-.9 4.6-2.2z" fill="#fff"/>
+        <text x="56" y="23" fill="#fff" font-family="-apple-system,'Helvetica Neue',Helvetica,Arial,sans-serif" font-size="11" letter-spacing=".2">Descargar en el</text>
+        <text x="56" y="43" fill="#fff" font-family="-apple-system,'Helvetica Neue',Helvetica,Arial,sans-serif" font-size="22" font-weight="600" letter-spacing="-.4">App Store</text>
+      </svg>
+    </a>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <p style="margin:0;font-weight:700">© 2026 SoftApp Solutions LLC</p>
+    <ul>
+      <li><a href="privacidad.html">Privacidad</a></li>
+      <li><a href="soporte.html">Soporte</a></li>
+      <li><a href="en/" hreflang="en" lang="en">English</a></li>
+    </ul>
+    <p class="made" style="margin:0">Hecho en España</p>
+  </div>
+</footer>
+
+<script src="js/colorear.js" defer></script>
+</body>
+</html>
