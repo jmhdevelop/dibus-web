@@ -1,7 +1,7 @@
-// Sirve dibu.softapp.tech desde GitHub Pages (jmhdevelop/dibu-web, rama master).
+// Sirve dibus.softapp.tech desde GitHub Pages (jmhdevelop/dibus-web, rama master).
 // La web es estática; aquí solo se reescriben rutas y redirecciones y se cachea.
 const ORIGIN = "https://jmhdevelop.github.io";
-const BASE = "/dibu-web";
+const BASE = "/dibus-web";
 
 // Imágenes y recursos versionados (?v=) viven mucho en caché; el HTML, poco.
 function cachePolicy(pathname) {
@@ -13,6 +13,10 @@ function cachePolicy(pathname) {
 export default {
   async fetch(request, env, ctx) {
     const url = new URL(request.url);
+    // El dominio antiguo redirige al nuevo, ruta incluida.
+    if (url.hostname === "dibu.softapp.tech") {
+      return Response.redirect("https://dibus.softapp.tech" + url.pathname + url.search, 301);
+    }
     if (request.method !== "GET" && request.method !== "HEAD") {
       return new Response("Method not allowed", { status: 405 });
     }

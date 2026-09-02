@@ -2,8 +2,9 @@ name = "dibu-web"
 main = "worker.js"
 compatibility_date = "2026-08-01"
 
-# dibu.softapp.tech se sirve desde este Worker, que reenvía a GitHub Pages.
+# dibus.softapp.tech se sirve desde este Worker (dibu.softapp.tech redirige), que reenvía a GitHub Pages.
 # El dominio personalizado crea el registro DNS en Cloudflare automáticamente.
 routes = [
+  { pattern = "dibus.softapp.tech", custom_domain = true },
   { pattern = "dibu.softapp.tech", custom_domain = true }
 ]
