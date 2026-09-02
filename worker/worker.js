@@ -9,11 +9,12 @@ export default {
     if (request.method !== "GET" && request.method !== "HEAD") {
       return new Response("Method not allowed", { status: 405 });
     }
+    const isHead = request.method === "HEAD";
     const upstream = new URL(ORIGIN + BASE + url.pathname + url.search);
     const cache = caches.default;
-    const cacheKey = new Request(url.toString(), request);
+    const cacheKey = new Request(url.toString(), { method: "GET" });
     const hit = await cache.match(cacheKey);
-    if (hit) return hit;
+    if (hit) return isHead ? new Response(null, hit) : hit;
 
     const res = await fetch(upstream.toString(), {
       headers: { "user-agent": "dibu-web-proxy", accept: request.headers.get("accept") || "*/*" },
@@ -42,6 +43,6 @@ export default {
     headers.set("x-served-by", "dibu-web worker");
     const out = new Response(body, { status, headers });
     if (status === 200) await cache.put(cacheKey, out.clone());
-    return out;
+    return isHead ? new Response(null, out) : out;
   },
 };
