@@ -11,7 +11,7 @@ function cachePolicy(pathname) {
 }
 
 export default {
-  async fetch(request) {
+  async fetch(request, env, ctx) {
     const url = new URL(request.url);
     if (request.method !== "GET" && request.method !== "HEAD") {
       return new Response("Method not allowed", { status: 405 });
@@ -38,18 +38,20 @@ export default {
       return Response.redirect(url.origin + path + target.search, 301);
     }
 
-    let body = res.body;
     let status = res.status;
+    let buf = await res.arrayBuffer();
     if (status === 404) {
       const notFound = await fetch(ORIGIN + BASE + "/404.html", { cf: { cacheTtl: 300 } });
-      body = notFound.body;
+      buf = await notFound.arrayBuffer();
     }
-    const headers = new Headers(res.headers);
-    headers.delete("set-cookie");
+    const headers = new Headers();
+    for (const h of ["content-type", "last-modified", "etag", "vary"]) {
+      const v = res.headers.get(h); if (v) headers.set(h, v);
+    }
     headers.set("cache-control", status === 200 ? cachePolicy(url.pathname) : "no-cache");
     headers.set("x-served-by", "dibu-web worker");
-    const out = new Response(body, { status, headers });
-    if (status === 200) await cache.put(cacheKey, out.clone());
+    const out = new Response(buf, { status, headers });
+    if (status === 200) ctx.waitUntil(cache.put(cacheKey, out.clone()));
     return isHead ? new Response(null, out) : out;
   },
 };
