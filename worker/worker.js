@@ -26,7 +26,6 @@ export default {
     const res = await fetch(upstream.toString(), {
       headers: { "user-agent": "dibu-web-proxy", accept: request.headers.get("accept") || "*/*" },
       redirect: "manual",
-      cf: { cacheTtl: 300, cacheEverything: true },
     });
 
     // GitHub responde 301 para carpetas sin barra final: devolver la redirección en nuestro dominio.
@@ -41,7 +40,7 @@ export default {
     let status = res.status;
     let buf = await res.arrayBuffer();
     if (status === 404) {
-      const notFound = await fetch(ORIGIN + BASE + "/404.html", { cf: { cacheTtl: 300 } });
+      const notFound = await fetch(ORIGIN + BASE + "/404.html");
       buf = await notFound.arrayBuffer();
     }
     const headers = new Headers();
