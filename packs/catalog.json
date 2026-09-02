@@ -1,5 +1,64 @@
 {
-  "version": 1,
-  "updated": "2026-09-02",
-  "packs": []
+ "version": 2,
+ "updated": "2026-09-02",
+ "packs": [
+  {
+   "id": "otono",
+   "title": "Otoño",
+   "title_en": "Autumn",
+   "symbol": "leaf.fill",
+   "product": "tech.softapp.dibu.pack.otono",
+   "cover": "otono/otono-bosque.png",
+   "templates": [
+    {
+     "id": "otono-bosque",
+     "title": "Camino del bosque",
+     "title_en": "Forest path",
+     "file": "otono/otono-bosque.png"
+    },
+    {
+     "id": "otono-buho",
+     "title": "Búho y bellotas",
+     "title_en": "Owl and acorns",
+     "file": "otono/otono-buho.png"
+    },
+    {
+     "id": "otono-calabazas",
+     "title": "Carro de calabazas",
+     "title_en": "Pumpkin cart",
+     "file": "otono/otono-calabazas.png"
+    },
+    {
+     "id": "otono-castanas",
+     "title": "Castañas",
+     "title_en": "Chestnuts",
+     "file": "otono/otono-castanas.png"
+    },
+    {
+     "id": "otono-erizo",
+     "title": "Erizo bajo la seta",
+     "title_en": "Hedgehog under a mushroom",
+     "file": "otono/otono-erizo.png"
+    },
+    {
+     "id": "otono-hojas",
+     "title": "Hojas y rastrillo",
+     "title_en": "Leaves and rake",
+     "file": "otono/otono-hojas.png"
+    },
+    {
+     "id": "otono-lluvia",
+     "title": "Botas de agua",
+     "title_en": "Rain boots",
+     "file": "otono/otono-lluvia.png"
+    },
+    {
+     "id": "otono-zorro",
+     "title": "Zorro con bufanda",
+     "title_en": "Fox with scarf",
+     "file": "otono/otono-zorro.png"
+    }
+   ]
+  }
+ ]
 }
