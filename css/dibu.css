@@ -273,7 +273,7 @@ p{margin:0 0 1em}
 /* Precios: dos columnas */
 .pricing.two{grid-template-columns:1fr 1.25fr;max-width:960px;margin-inline:auto}
 .plan ul.pack-chips{list-style:none;padding:0;margin:0 0 1.2rem;display:flex;flex-wrap:wrap;gap:.45rem}
-.pack-chips li{font-family:var(--display);font-weight:600;font-size:.95rem;background:var(--c);color:#141414;border:2px solid #141414;border-radius:999px;padding:.25rem .75rem;line-height:1.2}
+.pack-chips li{font-family:var(--display);font-weight:600;font-size:.95rem;background:var(--c);background:color-mix(in srgb,var(--c) 45%,#fff);color:#141414;border:2px solid #141414;border-radius:999px;padding:.25rem .75rem;line-height:1.2}
 .magic-pack{border:var(--line) solid #141414;border-radius:var(--r);padding:.7rem 1rem;background:var(--paper);color:var(--ink);margin:0 0 1.4rem;font-size:.95rem}
 .plan.featured .magic-pack{background:#fffcf4;color:#141414}
 @media (max-width:900px){.pricing.two{grid-template-columns:1fr;max-width:520px}}

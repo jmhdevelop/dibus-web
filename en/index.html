@@ -31,8 +31,10 @@
 <meta name="twitter:image" content="https://dibu.softapp.tech/img/og.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito:wght@400;600;700;800&display=swap">
-<link rel="stylesheet" href="../css/dibu.css">
+<link rel="preload" as="image" href="../img/seahorse-line.png" fetchpriority="high">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito:wght@400;600;700;800&display=swap" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito:wght@400;600;700;800&display=swap"></noscript>
+<link rel="stylesheet" href="../css/dibu.css?v=2">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -103,18 +105,18 @@
         <div class="loading" aria-hidden="true">Sharpening the crayons…</div>
       </div>
       <div class="tools">
-        <ul class="ceras" role="group" aria-label="Crayons">
-          <li><button class="cera" type="button" style="--c:#2f6cf0" data-color="#2f6cf0" aria-label="Crayon blue" aria-pressed="true"></button></li>
-          <li><button class="cera" type="button" style="--c:#ff6a5b" data-color="#ff6a5b" aria-label="Coral" aria-pressed="false"></button></li>
-          <li><button class="cera" type="button" style="--c:#ffd23f" data-color="#ffd23f" aria-label="Yellow" aria-pressed="false"></button></li>
-          <li><button class="cera" type="button" style="--c:#3fb562" data-color="#3fb562" aria-label="Grass green" aria-pressed="false"></button></li>
-          <li><button class="cera" type="button" style="--c:#8b5cf6" data-color="#8b5cf6" aria-label="Purple" aria-pressed="false"></button></li>
-          <li><button class="cera" type="button" style="--c:#ff7fbf" data-color="#ff7fbf" aria-label="Pink" aria-pressed="false"></button></li>
-          <li><button class="cera" type="button" style="--c:#ff9a2e" data-color="#ff9a2e" aria-label="Orange" aria-pressed="false"></button></li>
-          <li><button class="cera" type="button" style="--c:#26c2c9" data-color="#26c2c9" aria-label="Turquoise" aria-pressed="false"></button></li>
-          <li><button class="cera" type="button" style="--c:#7cc6ff" data-color="#7cc6ff" aria-label="Sky blue" aria-pressed="false"></button></li>
-          <li><button class="cera" type="button" style="--c:#a66a3d" data-color="#a66a3d" aria-label="Brown" aria-pressed="false"></button></li>
-        </ul>
+        <div class="ceras" role="group" aria-label="Crayons">
+          <button class="cera" type="button" style="--c:#2f6cf0" data-color="#2f6cf0" aria-label="Crayon blue" aria-pressed="true"></button>
+          <button class="cera" type="button" style="--c:#ff6a5b" data-color="#ff6a5b" aria-label="Coral" aria-pressed="false"></button>
+          <button class="cera" type="button" style="--c:#ffd23f" data-color="#ffd23f" aria-label="Yellow" aria-pressed="false"></button>
+          <button class="cera" type="button" style="--c:#3fb562" data-color="#3fb562" aria-label="Grass green" aria-pressed="false"></button>
+          <button class="cera" type="button" style="--c:#8b5cf6" data-color="#8b5cf6" aria-label="Purple" aria-pressed="false"></button>
+          <button class="cera" type="button" style="--c:#ff7fbf" data-color="#ff7fbf" aria-label="Pink" aria-pressed="false"></button>
+          <button class="cera" type="button" style="--c:#ff9a2e" data-color="#ff9a2e" aria-label="Orange" aria-pressed="false"></button>
+          <button class="cera" type="button" style="--c:#26c2c9" data-color="#26c2c9" aria-label="Turquoise" aria-pressed="false"></button>
+          <button class="cera" type="button" style="--c:#7cc6ff" data-color="#7cc6ff" aria-label="Sky blue" aria-pressed="false"></button>
+          <button class="cera" type="button" style="--c:#a66a3d" data-color="#a66a3d" aria-label="Brown" aria-pressed="false"></button>
+        </div>
         <div class="tool-row">
           <button class="btn" type="button" id="borrar">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 7h16M10 11v6M14 11v6M6 7l1 13h10l1-13M9 7V4h6v3"/></svg>
@@ -344,6 +346,6 @@
   </div>
 </footer>
 
-<script src="../js/colorear.js" defer></script>
+<script src="../js/colorear.js?v=2" defer></script>
 </body>
 </html>

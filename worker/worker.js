@@ -3,6 +3,13 @@
 const ORIGIN = "https://jmhdevelop.github.io";
 const BASE = "/dibu-web";
 
+// Imágenes y recursos versionados (?v=) viven mucho en caché; el HTML, poco.
+function cachePolicy(pathname) {
+  if (/\.(png|jpg|jpeg|webp|avif|svg|ico|woff2?)$/i.test(pathname)) return "public, max-age=2592000, immutable";
+  if (/\.(css|js)$/i.test(pathname)) return "public, max-age=604800, stale-while-revalidate=86400";
+  return "public, max-age=300, s-maxage=600";
+}
+
 export default {
   async fetch(request) {
     const url = new URL(request.url);
@@ -39,7 +46,7 @@ export default {
     }
     const headers = new Headers(res.headers);
     headers.delete("set-cookie");
-    headers.set("cache-control", status === 200 ? "public, max-age=300, s-maxage=600" : "no-cache");
+    headers.set("cache-control", status === 200 ? cachePolicy(url.pathname) : "no-cache");
     headers.set("x-served-by", "dibu-web worker");
     const out = new Response(body, { status, headers });
     if (status === 200) await cache.put(cacheKey, out.clone());
