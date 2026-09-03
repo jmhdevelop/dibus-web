@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Dibus — Privacy Policy</title>
-<meta name="description" content="Dibus privacy policy: the app collects no data. No accounts, no analytics, no ads. Magic pages are generated on your device and your drawings stay on your device.">
+<meta name="description" content="Dibus privacy policy: no accounts, no analytics, no ads, no third-party SDKs. Your drawings, photos and prompts stay on your device. What happens when the app downloads the pack catalog, and your GDPR rights.">
 <link rel="canonical" href="https://dibus.softapp.tech/en/privacy.html">
 <link rel="alternate" hreflang="es" href="https://dibus.softapp.tech/privacidad.html">
 <link rel="alternate" hreflang="en" href="https://dibus.softapp.tech/en/privacy.html">
@@ -16,16 +16,11 @@
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="Dibus">
 <meta property="og:title" content="Dibus — Privacy Policy">
-<meta property="og:description" content="Dibus collects no data: no accounts, no analytics, no ads. Everything stays on your device.">
+<meta property="og:description" content="No accounts, no analytics, no ads, no third-party SDKs. Your drawings and photos stay on your device.">
 <meta property="og:url" content="https://dibus.softapp.tech/en/privacy.html">
 <meta property="og:image" content="https://dibus.softapp.tech/img/og.png">
 <meta property="og:locale" content="en_US">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito:wght@400;600;700;800&display=swap" media="print" onload="this.media='all'">
-<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito:wght@400;600;700;800&display=swap" media="print" onload="this.media='all'">
-<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito:wght@400;600;700;800&display=swap"></noscript></noscript>
-<link rel="stylesheet" href="../css/dibu.css?v=2">
+<link rel="stylesheet" href="../css/dibu.css?v=3">
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
@@ -47,38 +42,63 @@
 <main id="main" class="doc">
   <span class="kicker" style="--k:var(--verde)">Privacy</span>
   <h1>Dibus Privacy Policy</h1>
-  <p class="meta">Last updated: September 2, 2026 · Data controller: SoftApp Solutions LLC</p>
+  <p class="meta">Last updated: September 3, 2026 · Data controller: SoftApp Solutions LLC</p>
 
   <div class="box">
-    <p style="margin:0;font-weight:700">In short: Dibus collects no data. There are no accounts, no analytics, no ads, and nothing you do in the app leaves your device.</p>
+    <p style="margin:0;font-weight:700">In short: Dibus creates no accounts, has no analytics, shows no ads and bundles no third-party SDKs. Your drawings, your photos and whatever you type stay on your device; we never receive them. The only thing the app asks the internet for is the pack catalog on this very site.</p>
   </div>
 
+  <h2>Who is responsible</h2>
+  <p>SoftApp Solutions LLC, the company that develops and publishes Dibus. For anything related to this policy, write to <a href="mailto:soporte@softapp.tech">soporte@softapp.tech</a>. If you are in the European Union, the company's full contact details —legal name, postal address, phone number and email— are published on the Dibus App Store product page, as the Digital Services Act requires.</p>
+
   <h2>What data we collect</h2>
-  <p>None. Dibus does not ask you to sign up, does not create accounts, includes no analytics or measurement tools, and shows no ads. We do not know your name, your email, your device, or what you draw.</p>
+  <p>None that identifies you. Dibus does not ask you to sign up, does not create accounts, includes no analytics or measurement tools, shows no ads and bundles no third-party kits: only Apple's own system frameworks. We do not use the advertising identifier or any other persistent identifier, and we do not track you in Apple's sense of the word. We do not know your name, your email, or what you draw.</p>
+  <p>There is exactly one thing the app does with a server, and we spell it out in the next section because we would rather you read it than discover it.</p>
+
+  <h2>When the app connects to the internet</h2>
+  <p>On launch, Dibus downloads a file from <code>dibus.softapp.tech</code> listing the available packs, and downloads a pack's pages when you open that pack. It is a request like any web page's: it carries no name, no email, no device identifier, and no code that could tell you apart from anyone else. We send no cookies, we do not stamp the app with an installation number, and we build no profiles.</p>
+  <p>As with any connection, the server unavoidably sees the IP address the device connects from, along with technical details such as the date and the kind of request. This site is hosted on <strong>GitHub Pages</strong> (Microsoft) behind <strong>Cloudflare</strong>, and both providers keep technical logs for short periods so they can serve the content and protect it from attacks. We do not download those logs, we do not cross-reference them with anything, and we do not use them to identify anyone. The legal basis for that minimal processing is our legitimate interest in keeping the app working and the infrastructure secure (Article 6(1)(f) GDPR).</p>
+  <p>If you would rather the app connected to nothing at all, use it in airplane mode: the pages bundled with the app, your drawings and every coloring tool work offline.</p>
 
   <h2>Magic pages</h2>
-  <p>When you describe a page (“an astronaut seahorse”), Dibus generates it on the device itself using Apple Intelligence. The text you type or dictate is not sent to any server, ours or anyone else's.</p>
+  <p>When you describe a page (“an astronaut seahorse”), Dibus asks <strong>Apple Intelligence</strong> for it through Image Playground, which is part of the operating system. Depending on your device and iOS version, Apple generates the image on the device itself or on <strong>Private Cloud Compute</strong>, Apple's infrastructure built for this purpose; Apple states that in that case requests are not stored, not shared with anyone —not even with Apple— and not used to train its models.</p>
+  <p>What matters here: that text <strong>never reaches SoftApp servers</strong> or any third-party artificial intelligence. Dibus uses no OpenAI, no Google, no other AI provider: only the system's own. The resulting page stays on your device. What Apple does with the request is governed by <a href="https://www.apple.com/legal/privacy/" rel="noopener">Apple's privacy policy</a>.</p>
+  <p>Ideas go through Apple Intelligence's content filters. If an idea is not appropriate, the page simply is not generated and the app suggests trying something else.</p>
 
   <h2>Color your photo</h2>
-  <p>Photos you turn into coloring pages are processed entirely on your iPhone or iPad. Neither the original photo nor the resulting page leaves the device. Dibus only accesses the photo you pick each time.</p>
+  <p>Photos you turn into coloring pages are processed entirely on your iPhone or iPad. Neither the original photo nor the resulting page leaves the device: they are sent neither to us nor to Apple. When you pick a photo, Dibus uses the system picker and only receives the one image you chose, with no access to the rest of your library. If you would rather take the photo there and then, the app asks permission to use the camera. And if you save the finished drawing to Photos, it goes into your library: from that point on your iCloud settings are in charge, not ours.</p>
 
   <h2>Your drawings</h2>
-  <p>Drawings are saved only on your device. SoftApp cannot see or access them. You can delete them at any time from the app itself (see <a href="support.html">Support</a>).</p>
+  <p>They are saved only on your device, in the app's private folder. SoftApp cannot see or access them. In this version they do not sync to iCloud. They stay until you delete them —press and hold a drawing and choose Delete, or open Dibus Settings and tap “Delete all drawings”— or until you uninstall the app, which takes them with it. If you have your device's iCloud backup switched on, that backup may include them; Apple handles that and you control it from iOS Settings.</p>
 
   <h2>Purchases</h2>
-  <p>In-app purchases (the page packs and “Unlimited Magic”) are handled by Apple through the App Store. SoftApp receives no payment data: no cards, no addresses, no buyer identity. Restoring purchases and Family Sharing are also handled by Apple.</p>
+  <p>In-app purchases —the page packs and “Unlimited Magic”— are handled by Apple through the App Store. SoftApp receives no payment data: no cards, no addresses, no buyer identity. All we get from Apple are aggregated sales reports (how many units, in which country), with no identifiable person behind them. Restoring purchases and Family Sharing are also handled by Apple, under its own privacy policy.</p>
 
   <h2>Children</h2>
-  <p>Dibus is suitable for children. No data is collected from children, or from anyone.</p>
+  <p>Dibus is rated 4+ and is meant for kids and grown-ups alike. It is not in the App Store Kids Category because it includes in-app purchases and links to this website, so an adult should set the device up before handing it to a child.</p>
+  <p>The essential point is simple: <strong>Dibus collects no personal data from anyone, and therefore none from children</strong>. There is no sign-up, no profile, no advertising, no chat, and no way for a child to contact strangers from the app. We comply with children's privacy law —COPPA in the United States, the GDPR, and in Spain Organic Law 3/2018— the safest way there is: by not processing data.</p>
+  <p>If you are a parent or guardian and want to control spending, turn on “Ask to Buy” and Screen Time in iOS Settings. And if you ever suspect we may have received a child's data, write to us: we will check and delete it.</p>
+
+  <h2>Your rights</h2>
+  <p>If you are in the European Union or the European Economic Area, the GDPR gives you the right to access your data, rectify it, erase it, restrict or object to its processing, and to data portability. Write to <a href="mailto:soporte@softapp.tech">soporte@softapp.tech</a> and we will answer within one month at the latest.</p>
+  <p>With Dibus the answer will almost always be the same, and it is good news: we hold no data of yours to look up, correct or delete. Our providers' technical logs are not tied to your name and we cannot link them to a specific person, so we could not identify you from them either (Article 11 GDPR). Your drawings and pages are yours to delete from the app itself, whenever you like, without asking us.</p>
+  <p>There is no consent to withdraw, because we never asked for any: there is no analytics or advertising to accept. Camera and “save to Photos” permissions can be withdrawn at any time in iOS Settings &gt; Dibus.</p>
+  <p>If you think we are getting this wrong, you can lodge a complaint with your country's supervisory authority. In Spain that is the Agencia Española de Protección de Datos (<a href="https://www.aepd.es" rel="noopener">aepd.es</a>).</p>
+
+  <h2>Where data is processed</h2>
+  <p>SoftApp Solutions LLC is incorporated in the United States. The providers hosting this site and the pack catalog, Cloudflare and GitHub (Microsoft), are also US companies and serve the content from servers around the world, the European Union included. Any international transfers that occur are covered by the European Commission's standard contractual clauses and by the EU-US Data Privacy Framework, to which both providers are certified. Worth repeating: the only thing that can travel that way are technical connection logs — never your drawings, your photos or what you type.</p>
+
+  <h2>How long data is kept</h2>
+  <p>On our side, nothing: we store no personal data, so there is no retention period to apply. Technical connection logs are kept by Cloudflare and GitHub for short periods under their own policies, and we hold no copy of them. Your drawings last on your device for exactly as long as you decide.</p>
 
   <h2>Selling or sharing data</h2>
-  <p>We do not sell or share data with anyone, simply because we have none.</p>
+  <p>We do not sell, share or hand over data to anyone: not to advertisers, not to data brokers, not to artificial intelligence services. Simply because we have none. There is no “sale” or “sharing” of personal information in the sense of California privacy law or any other.</p>
 
   <h2>Changes to this policy</h2>
-  <p>If it ever changed, we would publish the new version here with its date. The plan is for it not to change.</p>
+  <p>If it ever changed, we would publish the new version here with its date, and if the change were significant we would say so inside the app too. The plan is for it to change very little.</p>
 
   <h2>Contact</h2>
-  <p>SoftApp Solutions LLC · <a href="mailto:soporte@softapp.tech">soporte@softapp.tech</a></p>
+  <p>SoftApp Solutions LLC · <a href="mailto:soporte@softapp.tech">soporte@softapp.tech</a>. We reply within one or two working days, in English or Spanish.</p>
 
   <hr style="border:0;border-top:var(--line) solid var(--ink);margin:2.5rem 0 1.5rem">
   <p><a href="../privacidad.html" hreflang="es" lang="es">Leer esta política en español</a></p>

@@ -1,4 +1,36 @@
 /* Dibu — hoja de estilos. Papel, trazo y ceras. */
+@font-face{
+  font-family:"Fredoka";font-style:normal;font-weight:400;font-display:swap;
+  src:url("fonts/fredoka-v17-latin-400.woff2") format("woff2");
+}
+@font-face{
+  font-family:"Fredoka";font-style:normal;font-weight:500;font-display:swap;
+  src:url("fonts/fredoka-v17-latin-500.woff2") format("woff2");
+}
+@font-face{
+  font-family:"Fredoka";font-style:normal;font-weight:600;font-display:swap;
+  src:url("fonts/fredoka-v17-latin-600.woff2") format("woff2");
+}
+@font-face{
+  font-family:"Fredoka";font-style:normal;font-weight:700;font-display:swap;
+  src:url("fonts/fredoka-v17-latin-700.woff2") format("woff2");
+}
+@font-face{
+  font-family:"Nunito";font-style:normal;font-weight:400;font-display:swap;
+  src:url("fonts/nunito-v32-latin-400.woff2") format("woff2");
+}
+@font-face{
+  font-family:"Nunito";font-style:normal;font-weight:600;font-display:swap;
+  src:url("fonts/nunito-v32-latin-600.woff2") format("woff2");
+}
+@font-face{
+  font-family:"Nunito";font-style:normal;font-weight:700;font-display:swap;
+  src:url("fonts/nunito-v32-latin-700.woff2") format("woff2");
+}
+@font-face{
+  font-family:"Nunito";font-style:normal;font-weight:800;font-display:swap;
+  src:url("fonts/nunito-v32-latin-800.woff2") format("woff2");
+}
 :root{
   --paper:#fffcf4;
   --paper-2:#fff4d6;
