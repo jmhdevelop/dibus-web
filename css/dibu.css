@@ -148,6 +148,18 @@ p{margin:0 0 1em}
 .badge svg{width:190px;height:auto}
 .badge:hover{transform:translateY(-2px)}
 
+/* ---------- "Próximamente en el App Store" ---------- */
+/* El interruptor vive en js/app-store.js (constante APP_STORE_PUBLICADA).
+   Este bloque solo da estilo a lo que ese script marca como aria-disabled;
+   no hace falta tocarlo el día del lanzamiento. */
+[data-todo="app-store-id"][aria-disabled="true"]{
+  cursor:not-allowed;
+  opacity:.7;
+}
+.badge[aria-disabled="true"]:hover{transform:none}
+.btn[aria-disabled="true"]:hover{transform:none;box-shadow:var(--shadow-sm)}
+.plan.featured .btn[aria-disabled="true"]:hover{box-shadow:4px 4px 0 #141414}
+
 /* La lámina */
 .sheet-wrap{position:relative}
 .sheet{
