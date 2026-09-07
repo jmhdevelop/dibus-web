@@ -11,3 +11,5 @@ Sitio estático servido por GitHub Pages desde la raíz del repositorio.
 
 - [FreshTrack](https://freshtrack.softapp.tech/) — caducidades de alimentos con NFC
 - [DevToolbox](https://devtoolbox.softapp.tech/) — limpieza y monitorización para Mac
+
+Todas las apps de la casa, en <https://softapp.tech>.
