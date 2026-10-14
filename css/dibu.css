@@ -246,11 +246,12 @@ p{margin:0 0 1em}
 @media (max-width:900px){.magic .wrap{grid-template-columns:1fr}}
 
 /* Funciones */
-.features{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem}
+.features{display:flex;flex-wrap:wrap;justify-content:center;gap:1.5rem}
 .card{
   background:var(--paper);border:var(--line) solid var(--ink);border-radius:var(--r-lg);
   padding:1.6rem 1.5rem 1.4rem;box-shadow:var(--shadow);position:relative;
   transition:transform .15s ease;
+  flex:1 1 calc(33.333% - 1rem);
 }
 .card:hover{transform:translate(-2px,-2px) rotate(-.4deg)}
 .card .icon{
@@ -259,8 +260,8 @@ p{margin:0 0 1em}
 }
 .card .icon svg{width:32px;height:32px;stroke:#141414;fill:none;stroke-width:2.6;stroke-linecap:round;stroke-linejoin:round}
 .card p{margin:0;color:var(--ink-soft)}
-@media (max-width:900px){.features{grid-template-columns:repeat(2,1fr)}}
-@media (max-width:560px){.features{grid-template-columns:1fr}}
+@media (max-width:900px){.card{flex-basis:calc(50% - .75rem)}}
+@media (max-width:560px){.card{flex-basis:100%}}
 
 /* Galería */
 .gallery{display:grid;grid-template-columns:repeat(4,1fr);gap:1.25rem}
@@ -318,8 +319,6 @@ p{margin:0 0 1em}
 .pricing.two{grid-template-columns:1fr 1.25fr;max-width:960px;margin-inline:auto}
 .plan ul.pack-chips{list-style:none;padding:0;margin:0 0 1.2rem;display:flex;flex-wrap:wrap;gap:.45rem}
 .pack-chips li{font-family:var(--display);font-weight:600;font-size:.95rem;background:var(--c);background:color-mix(in srgb,var(--c) 45%,#fff);color:#141414;border:2px solid #141414;border-radius:999px;padding:.25rem .75rem;line-height:1.2}
-.magic-pack{border:var(--line) solid #141414;border-radius:var(--r);padding:.7rem 1rem;background:var(--paper);color:var(--ink);margin:0 0 1.4rem;font-size:.95rem}
-.plan.featured .magic-pack{background:#fffcf4;color:#141414}
 @media (max-width:900px){.pricing.two{grid-template-columns:1fr;max-width:520px}}
 
 /* Familias */
