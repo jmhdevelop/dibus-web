@@ -1,11 +1,17 @@
 {
- "version": 6,
- "updated": "2026-09-03",
+ "version": 7,
+ "updated": "2026-10-18",
  "packs": [
   {
    "id": "otono",
    "title": "Otoño",
    "title_en": "Autumn",
+   "titles": {
+    "de": "Herbst",
+    "fr": "Automne",
+    "it": "Autunno",
+    "pt-BR": "Outono"
+   },
    "symbol": "leaf.fill",
    "product": "tech.softapp.dibu.pack.otono",
    "audience": "ninos",
@@ -15,48 +21,96 @@
      "id": "otono-bosque",
      "title": "Camino del bosque",
      "title_en": "Forest path",
+     "titles": {
+      "de": "Waldweg",
+      "fr": "Chemin de forêt",
+      "it": "Sentiero nel bosco",
+      "pt-BR": "Trilha na floresta"
+     },
      "file": "otono/otono-bosque.png"
     },
     {
      "id": "otono-buho",
      "title": "Búho y bellotas",
      "title_en": "Owl and acorns",
+     "titles": {
+      "de": "Eule und Eicheln",
+      "fr": "Hibou et glands",
+      "it": "Gufo e ghiande",
+      "pt-BR": "Coruja e bolotas"
+     },
      "file": "otono/otono-buho.png"
     },
     {
      "id": "otono-calabazas",
      "title": "Carro de calabazas",
      "title_en": "Pumpkin cart",
+     "titles": {
+      "de": "Kürbiskarren",
+      "fr": "Charrette de citrouilles",
+      "it": "Carretto di zucche",
+      "pt-BR": "Carroça de abóboras"
+     },
      "file": "otono/otono-calabazas.png"
     },
     {
      "id": "otono-castanas",
      "title": "Castañas",
      "title_en": "Chestnuts",
+     "titles": {
+      "de": "Kastanien",
+      "fr": "Châtaignes",
+      "it": "Castagne",
+      "pt-BR": "Castanhas"
+     },
      "file": "otono/otono-castanas.png"
     },
     {
      "id": "otono-erizo",
      "title": "Erizo bajo la seta",
      "title_en": "Hedgehog under a mushroom",
+     "titles": {
+      "de": "Igel unterm Pilz",
+      "fr": "Hérisson sous un champignon",
+      "it": "Riccio sotto il fungo",
+      "pt-BR": "Ouriço sob o cogumelo"
+     },
      "file": "otono/otono-erizo.png"
     },
     {
      "id": "otono-hojas",
      "title": "Hojas y rastrillo",
      "title_en": "Leaves and rake",
+     "titles": {
+      "de": "Laub und Rechen",
+      "fr": "Feuilles et râteau",
+      "it": "Foglie e rastrello",
+      "pt-BR": "Folhas e rastelo"
+     },
      "file": "otono/otono-hojas.png"
     },
     {
      "id": "otono-lluvia",
      "title": "Botas de agua",
      "title_en": "Rain boots",
+     "titles": {
+      "de": "Gummistiefel",
+      "fr": "Bottes de pluie",
+      "it": "Stivali di gomma",
+      "pt-BR": "Galochas"
+     },
      "file": "otono/otono-lluvia.png"
     },
     {
      "id": "otono-zorro",
      "title": "Zorro con bufanda",
      "title_en": "Fox with scarf",
+     "titles": {
+      "de": "Fuchs mit Schal",
+      "fr": "Renard à écharpe",
+      "it": "Volpe con la sciarpa",
+      "pt-BR": "Raposa de cachecol"
+     },
      "file": "otono/otono-zorro.png"
     }
    ]
