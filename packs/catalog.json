@@ -1,5 +1,5 @@
 {
- "version": 9,
+ "version": 10,
  "updated": "2026-10-19",
  "packs": [
   {
@@ -15,7 +15,7 @@
    "symbol": "leaf.fill",
    "product": "tech.softapp.dibu.pack.otono",
    "audience": "ninos",
-   "cover": "otono/otono-bosque.png",
+   "cover": "otono/otono-bosque-v2.png",
    "templates": [
     {
      "id": "otono-bosque",
@@ -27,7 +27,7 @@
       "it": "Sentiero nel bosco",
       "pt-BR": "Trilha na floresta"
      },
-     "file": "otono/otono-bosque.png"
+     "file": "otono/otono-bosque-v2.png"
     },
     {
      "id": "otono-buho",
@@ -39,7 +39,7 @@
       "it": "Gufo e ghiande",
       "pt-BR": "Coruja e bolotas"
      },
-     "file": "otono/otono-buho.png"
+     "file": "otono/otono-buho-v2.png"
     },
     {
      "id": "otono-calabazas",
@@ -51,7 +51,7 @@
       "it": "Carretto di zucche",
       "pt-BR": "Carroça de abóboras"
      },
-     "file": "otono/otono-calabazas.png"
+     "file": "otono/otono-calabazas-v2.png"
     },
     {
      "id": "otono-castanas",
@@ -63,7 +63,7 @@
       "it": "Castagne",
       "pt-BR": "Castanhas"
      },
-     "file": "otono/otono-castanas.png"
+     "file": "otono/otono-castanas-v2.png"
     },
     {
      "id": "otono-erizo",
@@ -75,7 +75,7 @@
       "it": "Riccio sotto il fungo",
       "pt-BR": "Ouriço sob o cogumelo"
      },
-     "file": "otono/otono-erizo.png"
+     "file": "otono/otono-erizo-v2.png"
     },
     {
      "id": "otono-hojas",
@@ -87,7 +87,7 @@
       "it": "Foglie e rastrello",
       "pt-BR": "Folhas e rastelo"
      },
-     "file": "otono/otono-hojas.png"
+     "file": "otono/otono-hojas-v2.png"
     },
     {
      "id": "otono-lluvia",
@@ -99,7 +99,7 @@
       "it": "Stivali di gomma",
       "pt-BR": "Galochas"
      },
-     "file": "otono/otono-lluvia.png"
+     "file": "otono/otono-lluvia-v2.png"
     },
     {
      "id": "otono-zorro",
@@ -111,7 +111,7 @@
       "it": "Volpe con la sciarpa",
       "pt-BR": "Raposa de cachecol"
      },
-     "file": "otono/otono-zorro.png"
+     "file": "otono/otono-zorro-v2.png"
     }
    ]
   }
