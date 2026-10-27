@@ -144,21 +144,15 @@ p{margin:0 0 1em}
   color:var(--ink-soft);font-size:1rem;
 }
 .hint svg{width:38px;height:24px}
-.badge{display:inline-block;border-radius:12px;border:var(--line) solid var(--ink);line-height:0}
-.badge svg{width:190px;height:auto}
-.badge:hover{transform:translateY(-2px)}
 
-/* ---------- "Próximamente en el App Store" ---------- */
-/* El interruptor vive en js/app-store.js (constante APP_STORE_PUBLICADA).
-   Este bloque solo da estilo a lo que ese script marca como aria-disabled;
-   no hace falta tocarlo el día del lanzamiento. */
-[data-todo="app-store-id"][aria-disabled="true"]{
-  cursor:not-allowed;
-  opacity:.7;
-}
-.badge[aria-disabled="true"]:hover{transform:none}
-.btn[aria-disabled="true"]:hover{transform:none;box-shadow:var(--shadow-sm)}
-.plan.featured .btn[aria-disabled="true"]:hover{box-shadow:4px 4px 0 #141414}
+/* Insignia oficial del App Store (claro/oscuro). Solo el SVG de Apple, sin tocar. */
+.appstore{display:inline-block;line-height:0}
+.appstore img{height:48px;width:auto}
+.appstore .as-d{display:none}
+@media (prefers-color-scheme:dark){.appstore .as-l{display:none}.appstore .as-d{display:inline}}
+.cta .appstore{margin:1rem auto 0}
+.credit{margin:.5rem 0 0;font-size:.8rem;color:var(--ink-soft)}
+.magic-result .credit{display:block;text-align:left;margin-top:.9rem}
 
 /* La lámina */
 .sheet-wrap{position:relative}
@@ -336,7 +330,6 @@ p{margin:0 0 1em}
 /* CTA final */
 .cta{text-align:center;padding:clamp(3rem,7vw,5.5rem) 0}
 .cta h2{font-size:clamp(2rem,5vw,3.2rem)}
-.cta .badge{margin:1rem auto 0}
 
 /* Footer */
 .footer{border-top:var(--line) solid var(--ink);padding:2rem 0 2.5rem;font-size:.95rem}
