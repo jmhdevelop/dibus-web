@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Malbuch-App für iPad und iPhone mit KI — Dibus</title>
+<meta name="description" content="Mal-App für Kinder und Erwachsene: Beschreib das Bild, das du willst, Apple Intelligence erstellt es und du malst es mit einem Tipp aus. Ohne Werbung, ohne Tracking.">
+<link rel="canonical" href="https://dibus.softapp.tech/de/">
+<link rel="alternate" hreflang="es" href="https://dibus.softapp.tech/">
+<link rel="alternate" hreflang="en" href="https://dibus.softapp.tech/en/">
+<link rel="alternate" hreflang="de" href="https://dibus.softapp.tech/de/">
+<link rel="alternate" hreflang="fr" href="https://dibus.softapp.tech/fr/">
+<link rel="alternate" hreflang="it" href="https://dibus.softapp.tech/it/">
+<link rel="alternate" hreflang="pt-BR" href="https://dibus.softapp.tech/pt-br/">
+<link rel="alternate" hreflang="x-default" href="https://dibus.softapp.tech/">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#fffcf4" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#16151b" media="(prefers-color-scheme: dark)">
+<meta name="apple-itunes-app" content="app-id=6807736269">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23ffd23f'/%3E%3Cpath d='M12 50 L36 26 L44 34 L20 58Z' fill='%23ff6a5b' stroke='%23141414' stroke-width='4' stroke-linejoin='round'/%3E%3Cpath d='M8 56 L12 50 L20 58Z' fill='%23141414'/%3E%3Cpath d='M36 26 L42 14 L54 24 L44 34Z' fill='%23fff' stroke='%23141414' stroke-width='4' stroke-linejoin='round'/%3E%3C/svg%3E">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Dibus">
+<meta property="og:title" content="Dibus — Wünsch dir ein Bild. Mal es aus.">
+<meta property="og:description" content="Beschreib, was du ausmalen möchtest, und Apple Intelligence erstellt das Bild, ohne Umweg über unsere Server. Ausmalen mit einem Tipp, Apple Pencil, keine Werbung, kein Tracking.">
+<meta property="og:url" content="https://dibus.softapp.tech/de/">
+<meta property="og:image" content="https://dibus.softapp.tech/img/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="de_DE">
+<meta property="og:locale:alternate" content="es_ES">
+<meta property="og:locale:alternate" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Dibus — Wünsch dir ein Bild. Mal es aus.">
+<meta name="twitter:description" content="Beschreib, was du ausmalen möchtest, und Apple Intelligence erstellt das Bild, ohne Umweg über unsere Server. Keine Werbung, kein Tracking.">
+<meta name="twitter:image" content="https://dibus.softapp.tech/img/og.png">
+<link rel="preload" as="image" href="../img/caballito-line.png" fetchpriority="high">
+<link rel="stylesheet" href="../css/dibu.css?v=5">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "MobileApplication",
+      "name": "Dibus",
+      "url": "https://dibus.softapp.tech/de/",
+      "image": "https://dibus.softapp.tech/img/og.png",
+      "description": "Mal-App für Kinder und Erwachsene auf iPad und iPhone. Beschreib, was du willst, und Apple Intelligence erstellt das Bild. Keine Werbung, keine Accounts, kein Tracking.",
+      "operatingSystem": "iOS, iPadOS",
+      "downloadUrl": "https://apps.apple.com/app/id6807736269?l=de",
+      "installUrl": "https://apps.apple.com/app/id6807736269?l=de",
+      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "EUR" },
+      "applicationCategory": "GameApplication",
+      "inLanguage": "de",
+      "author": { "@type": "Organization", "name": "SoftApp Solutions LLC", "email": "dibus@softapp.tech", "url": "https://dibus.softapp.tech/" }
+    },
+    { "@type": "WebSite", "name": "Dibus", "url": "https://dibus.softapp.tech/de/", "inLanguage": "de" }
+  ]
+}
+</script>
+  <script defer src="../js/visitas.js"></script>
+</head>
+<body>
+<a class="skip" href="#main">Zum Inhalt springen</a>
+
+<header class="nav">
+  <div class="wrap">
+    <a class="logo" href="/de/" aria-label="Dibus, Startseite">Dibus
+      <svg viewBox="0 0 100 10" preserveAspectRatio="none" aria-hidden="true"><path d="M2 6 Q 25 1 50 6 T 98 4" fill="none" stroke="#ff6a5b" stroke-width="4" stroke-linecap="round"/></svg>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#features">Funktionen</a></li>
+      <li><a href="#pricing">Preise</a></li>
+      <li><a href="support.html">Support</a></li>
+    </ul>
+    <a class="btn btn-ink nav-cta" href="https://apps.apple.com/app/id6807736269?l=de">Laden im App Store</a>
+    <details class="langs"><summary class="lang" aria-label="Language / Idioma">DE</summary><ul><li><a href="/" hreflang="es" lang="es">Español</a></li><li><a href="/en/" hreflang="en" lang="en">English</a></li><li><a href="/de/" hreflang="de" lang="de" aria-current="true">Deutsch</a></li><li><a href="/fr/" hreflang="fr" lang="fr">Français</a></li><li><a href="/it/" hreflang="it" lang="it">Italiano</a></li><li><a href="/pt-br/" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a></li></ul></details>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- ================= HERO ================= -->
+<section class="hero">
+  <div class="wrap">
+    <div class="hero-copy">
+      <h1>Wünsch dir ein Bild.<br><span class="hl">Mal es aus.</span></h1>
+      <p class="lead">Beschreib, was du ausmalen möchtest, und Dibus zeichnet es sofort auf deinem iPad. Dann tippen, füllen und speichern. Jetzt im App Store erhältlich.</p>
+      <div class="hero-actions">
+        <a class="appstore" href="https://apps.apple.com/app/id6807736269?l=de"><img class="as-l" src="../img/app-store/de-black.svg" alt="Laden im App Store" width="144" height="48"><img class="as-d" src="../img/app-store/de-white.svg" alt="Laden im App Store" width="144" height="48"></a>
+        <span class="hint" aria-hidden="true">
+          <svg viewBox="0 0 40 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M2 14 C 12 2, 22 22, 34 10"/><path d="M28 8 L 35 9 L 33 16"/></svg>
+          Probier es aus: Tipp auf das Bild
+        </span>
+      </div>
+    </div>
+
+    <div class="sheet-wrap">
+      <svg class="clip" viewBox="0 0 36 70" aria-hidden="true"><path d="M8 20 v34 a10 10 0 0 0 20 0 V14 a7 7 0 0 0 -14 0 v36 a3 3 0 0 0 6 0 V22" fill="none" stroke="#ff6a5b" stroke-width="5" stroke-linecap="round"/><path d="M8 20 v34 a10 10 0 0 0 20 0 V14 a7 7 0 0 0 -14 0 v36 a3 3 0 0 0 6 0 V22" fill="none" stroke="#141414" stroke-width="1.5" stroke-linecap="round"/></svg>
+      <div class="sheet">
+        <canvas id="lamina" width="1200" height="1200" data-src="../img/caballito-line.png" role="img" aria-label="Ausmalbild eines Seepferdchens zwischen Algen. Tipp auf eine Fläche, um sie mit dem gewählten Wachsmalstift zu füllen."></canvas>
+        <div class="loading" aria-hidden="true">Die Stifte werden gespitzt …</div>
+      </div>
+      <div class="tools">
+        <p class="credit">Erstellt mit Grok</p>
+        <div class="ceras" role="group" aria-label="Wachsmalstifte">
+          <button class="cera" type="button" style="--c:#2f6cf0" data-color="#2f6cf0" aria-label="Wachsmalstift Blau" aria-pressed="true"></button>
+          <button class="cera" type="button" style="--c:#ff6a5b" data-color="#ff6a5b" aria-label="Koralle" aria-pressed="false"></button>
+          <button class="cera" type="button" style="--c:#ffd23f" data-color="#ffd23f" aria-label="Gelb" aria-pressed="false"></button>
+          <button class="cera" type="button" style="--c:#3fb562" data-color="#3fb562" aria-label="Grasgrün" aria-pressed="false"></button>
+          <button class="cera" type="button" style="--c:#8b5cf6" data-color="#8b5cf6" aria-label="Lila" aria-pressed="false"></button>
+          <button class="cera" type="button" style="--c:#ff7fbf" data-color="#ff7fbf" aria-label="Rosa" aria-pressed="false"></button>
+          <button class="cera" type="button" style="--c:#ff9a2e" data-color="#ff9a2e" aria-label="Orange" aria-pressed="false"></button>
+          <button class="cera" type="button" style="--c:#26c2c9" data-color="#26c2c9" aria-label="Türkis" aria-pressed="false"></button>
+          <button class="cera" type="button" style="--c:#7cc6ff" data-color="#7cc6ff" aria-label="Himmelblau" aria-pressed="false"></button>
+          <button class="cera" type="button" style="--c:#a66a3d" data-color="#a66a3d" aria-label="Braun" aria-pressed="false"></button>
+        </div>
+        <div class="tool-row">
+          <button class="btn" type="button" id="borrar">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 7h16M10 11v6M14 11v6M6 7l1 13h10l1-13M9 7V4h6v3"/></svg>
+            Alles löschen
+          </button>
+          <button class="btn btn-yellow" type="button" id="sorpresa">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l1.8 4.6L18 9l-4.2 1.4L12 15l-1.8-4.6L6 9l4.2-1.4zM5 16l.8 2 2 .8-2 .8L5 21l-.8-1.4-2-.8 2-.8zM18 15l.8 2 2 .8-2 .8-.8 2-.8-2-2-.8 2-.8z"/></svg>
+            Überrasch mich
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= MAGIC PAGES ================= -->
+<section class="section magic" id="magic">
+  <div class="wrap">
+    <div>
+      <div class="section-head">
+        <span class="kicker" style="--k:var(--morado)">Magische Ausmalbilder</span>
+        <h2>Alles, was du dir vorstellst, zum Ausmalen</h2>
+        <p>Schreib oder diktiere, worauf du Lust hast — „ein Seepferdchen zwischen Algen“, „ein Bagger mit Flügeln“ — und Dibus zeichnet das Bild in Sekunden.</p>
+      </div>
+      <ul class="checks">
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10" fill="#8b5cf6" stroke="#141414" stroke-width="2"/><path d="M7 12.5l3.2 3.2L17 9" fill="none" stroke="#141414" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>Erstellt von Apple Intelligence, auf deinem Gerät oder auf den Servern von Apple.</li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10" fill="#26c2c9" stroke="#141414" stroke-width="2"/><path d="M7 12.5l3.2 3.2L17 9" fill="none" stroke="#141414" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>Läuft nie über unsere Server oder eine andere KI von Drittanbietern.</li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10" fill="#ffd23f" stroke="#141414" stroke-width="2"/><path d="M7 12.5l3.2 3.2L17 9" fill="none" stroke="#141414" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>Geht durch die Inhaltsfilter von Apple.</li>
+      </ul>
+      <p class="note">Magische Ausmalbilder brauchen ein iPhone 15 Pro oder neuer oder ein iPad mit M1- oder A17-Pro-Chip. Auf allen anderen Geräten funktioniert Dibus genauso, mit den Ausmalpaketen.</p>
+    </div>
+    <div class="magic-demo" aria-hidden="true">
+      <div class="prompt"><span>ein Seepferdchen zwischen Algen</span><span class="caret"></span>
+        <svg class="mic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5 11a7 7 0 0 0 14 0M12 18v3M9 21h6"/></svg>
+      </div>
+      <svg class="arrow-down" viewBox="0 0 56 56" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><path d="M28 6 C 20 20, 36 30, 28 48"/><path d="M18 40 L28 49 L37 39"/></svg>
+      <div class="magic-result">
+        <img src="../img/caballito-480.png" srcset="../img/caballito-480.png 480w, ../img/caballito-900.png 900w" sizes="(max-width: 420px) 92vw, 360px" width="480" height="480" alt="" loading="lazy">
+        <span class="stamp">Auf deinem iPad gemacht</span>
+        <span class="credit">Erstellt mit Grok</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FEATURES ================= -->
+<section class="section" id="features">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="kicker" style="--k:var(--azul)">Funktionen</span>
+      <h2>Alles, was du brauchst. Nichts, was stört.</h2>
+    </div>
+    <div class="features">
+      <article class="card">
+        <div class="icon" style="--c:var(--amarillo)"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M13 19V8a2.5 2.5 0 0 1 5 0v9"/><path d="M18 16a2.5 2.5 0 0 1 5 0v3"/><path d="M23 18.5a2.5 2.5 0 0 1 5 0V23c0 4-3 7-8 7h-3c-3 0-5-1.5-7-4l-3-4.5a2.3 2.3 0 0 1 3.6-3L13 21"/><path d="M6 6 4 4M9 3V1M3 9H1"/></svg></div>
+        <h3>Ausmalen mit einem Tipp</h3>
+        <p>Tipp auf eine Fläche, und sie füllt sich von selbst, nie über die Linien hinaus. Gemacht für kleine Finger und schnelles Ausmalen.</p>
+      </article>
+      <article class="card">
+        <div class="icon" style="--c:var(--verde)"><svg viewBox="0 0 32 32" aria-hidden="true"><rect x="9" y="3" width="19" height="22" rx="3"/><path d="M4 10v16a3 3 0 0 0 3 3h15"/><path d="M14 10h9M14 15h9"/></svg></div>
+        <h3>Ausmalpakete</h3>
+        <p>Meer, Dinosaurier, Bauernhof, Weltraum, Fahrzeuge und Mandalas für Erwachsene. Von Hand gezeichnet, mit Liebe.</p>
+      </article>
+      <article class="card">
+        <div class="icon" style="--c:var(--cielo)"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M21 4l7 7L11 28H4v-7z"/><path d="M17 8l7 7"/><path d="M4 28l4-4"/></svg></div>
+        <h3>Apple Pencil und iPad</h3>
+        <p>Pinsel mit Druck- und Neigungserkennung, unbegrenzter Zoom und eine Palette direkt neben dir. Auf dem iPad ist Dibus ein Zeichentisch.</p>
+      </article>
+      <article class="card">
+        <div class="icon" style="--c:var(--morado)"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M9 12V4h14v8"/><rect x="4" y="12" width="24" height="11" rx="3"/><path d="M9 19h14v9H9z"/><path d="M12 23h8"/></svg></div>
+        <h3>Drucken und speichern</h3>
+        <p>Drucke das leere Bild oder dein fertiges Kunstwerk mit AirPrint aus und speichere es mit einem Tipp in Fotos.</p>
+      </article>
+      <article class="card">
+        <div class="icon" style="--c:var(--rosa)"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 3l11 4v9c0 7-5 11-11 13C10 27 5 23 5 16V7z"/><path d="M11 16l3.5 3.5L21 13"/></svg></div>
+        <h3>Keine Werbung, kein Tracking</h3>
+        <p>Kein Banner, kein Video zum Wegklicken, kein einziges gesammeltes Datum. Nur Malen.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= GALLERY ================= -->
+<section class="section" id="gallery" style="padding-top:0">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="kicker" style="--k:var(--verde)">Galerie</span>
+      <h2>Bilder, mit denen du gern anfängst</h2>
+      <p>Fahr mit der Maus darüber oder tipp darauf, um sie in Farbe zu sehen.</p>
+    </div>
+    <div class="gallery">
+      <figure tabindex="0" style="--tag:var(--verde);--blobs:radial-gradient(circle at 45% 55%,#3fb562 0 30%,transparent 31%),radial-gradient(circle at 75% 25%,#ffd23f 0 14%,transparent 15%),radial-gradient(circle at 20% 20%,#7cc6ff 0 22%,transparent 23%),radial-gradient(circle at 25% 85%,#a66a3d 0 40%,transparent 41%)">
+        <div class="art"><img src="../img/dino-900.png" width="900" height="900" alt="Ausmalbild eines Dinosauriers" loading="lazy"></div>
+        <figcaption>Dinosaurier <small>Dinos</small></figcaption>
+      </figure>
+      <figure tabindex="0" style="--tag:var(--cielo);--blobs:radial-gradient(circle at 50% 50%,#ffd23f 0 24%,transparent 25%),radial-gradient(circle at 50% 50%,#2f6cf0 0 100%)">
+        <div class="art"><img src="../img/submarine-900.png" width="900" height="900" alt="Ausmalbild eines U-Boots" loading="lazy"></div>
+        <figcaption>U-Boot <small>Meer</small></figcaption>
+      </figure>
+      <figure tabindex="0" style="--tag:var(--naranja);--blobs:radial-gradient(circle at 50% 45%,#a66a3d 0 28%,transparent 29%),radial-gradient(circle at 50% 30%,#ff9a2e 0 12%,transparent 13%),radial-gradient(circle at 50% 50%,#8b5cf6 0 100%)">
+        <div class="art"><img src="../img/owl-900.png" width="900" height="900" alt="Ausmalbild einer Eule" loading="lazy"></div>
+        <figcaption>Eule <small>Bauernhof</small></figcaption>
+      </figure>
+      <figure tabindex="0" style="--tag:var(--rosa);--blobs:radial-gradient(circle at 50% 50%,#ffd23f 0 12%,#ff7fbf 12% 24%,#8b5cf6 24% 36%,#26c2c9 36% 48%,#ff6a5b 48% 100%)">
+        <div class="art"><img src="../img/mandala-900.png" width="900" height="900" alt="Ausmalbild eines Mandalas" loading="lazy"></div>
+        <figcaption>Mandala <small>Erwachsene</small></figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PRICING ================= -->
+<section class="section" id="pricing" style="padding-top:0">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="kicker" style="--k:var(--amarillo)">Preise</span>
+      <h2>Kostenlos starten. Pakete einzeln.</h2>
+    </div>
+    <div class="pricing two">
+      <article class="plan">
+        <h3>Kostenlos</h3>
+        <p class="price">0 €<small>für immer</small></p>
+        <ul>
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10" fill="#3fb562" stroke="#141414" stroke-width="2"/><path d="M7 12.5l3.2 3.2L17 9" fill="none" stroke="#141414" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>12 Ausmalbilder</li>
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10" fill="#3fb562" stroke="#141414" stroke-width="2"/><path d="M7 12.5l3.2 3.2L17 9" fill="none" stroke="#141414" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>Alle Werkzeuge</li>
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10" fill="#3fb562" stroke="#141414" stroke-width="2"/><path d="M7 12.5l3.2 3.2L17 9" fill="none" stroke="#141414" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>Ausmalen mit einem Tipp</li>
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10" fill="#3fb562" stroke="#141414" stroke-width="2"/><path d="M7 12.5l3.2 3.2L17 9" fill="none" stroke="#141414" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>Magische Ausmalbilder</li>
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10" fill="#3fb562" stroke="#141414" stroke-width="2"/><path d="M7 12.5l3.2 3.2L17 9" fill="none" stroke="#141414" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>Speichern und drucken</li>
+        </ul>
+        <a class="btn" href="https://apps.apple.com/app/id6807736269?l=de">Kostenlos laden</a>
+      </article>
+      <article class="plan featured">
+        <span class="tag">Du zahlst nur, was du nutzt</span>
+        <h3>Pakete</h3>
+        <p class="price">ab 0,99 €<small>pro Paket mit 8 Ausmalbildern, für immer deins · 36 Pakete zum Start: 18 für Kinder und 18 für Erwachsene</small></p>
+        <ul>
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10" fill="#fff" stroke="#141414" stroke-width="2"/><path d="M7 12.5l3.2 3.2L17 9" fill="none" stroke="#141414" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>Jedes Paket kaufst du einzeln, ohne Haken</li>
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10" fill="#fff" stroke="#141414" stroke-width="2"/><path d="M7 12.5l3.2 3.2L17 9" fill="none" stroke="#141414" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>Für immer deins, auf allen deinen Geräten</li>
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10" fill="#fff" stroke="#141414" stroke-width="2"/><path d="M7 12.5l3.2 3.2L17 9" fill="none" stroke="#141414" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>Familienfreigabe</li>
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10" fill="#fff" stroke="#141414" stroke-width="2"/><path d="M7 12.5l3.2 3.2L17 9" fill="none" stroke="#141414" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>Oder die Kinder- und die Erwachsenen-Kollektion, je 6,99 €, mit festem Inhalt</li>
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10" fill="#fff" stroke="#141414" stroke-width="2"/><path d="M7 12.5l3.2 3.2L17 9" fill="none" stroke="#141414" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>Sieh dir alle Bilder vor dem Kauf an und male das erste Bild jedes Pakets gratis aus</li>
+        </ul>
+        <ul class="pack-chips" aria-label="Einige der verfügbaren Pakete">
+          <li style="--c:var(--cielo)">Meer</li>
+          <li style="--c:var(--verde)">Dinosaurier</li>
+          <li style="--c:var(--amarillo)">Bauernhof</li>
+          <li style="--c:var(--morado)">Weltraum</li>
+          <li style="--c:var(--naranja)">Fahrzeuge</li>
+          <li style="--c:var(--verde)">Wald</li>
+          <li style="--c:var(--turquesa)">Dschungel</li>
+          <li style="--c:var(--rosa)">Haustiere</li>
+          <li style="--c:var(--amarillo)">Lustiges Essen</li>
+          <li style="--c:var(--cielo)">Sport</li>
+          <li style="--c:var(--morado)">Musik</li>
+          <li style="--c:var(--verde)">Garten und Käfer</li>
+          <li style="--c:var(--rosa)">Fantasy</li>
+          <li style="--c:var(--naranja)">Roboter</li>
+          <li style="--c:var(--cielo)">Piraten</li>
+          <li style="--c:var(--coral)">Weihnachten</li>
+          <li style="--c:var(--turquesa)">Halloween</li>
+          <li style="--c:var(--rosa)">Mandalas</li>
+          <li style="--c:var(--rosa)">Tier-Mandalas</li>
+          <li style="--c:var(--rosa)">Natur-Mandalas</li>
+          <li style="--c:var(--rosa)">Geometrische Mandalas</li>
+          <li style="--c:var(--verde)">Botanik</li>
+          <li style="--c:var(--morado)">Städte</li>
+        </ul>
+        <a class="btn" href="https://apps.apple.com/app/id6807736269?l=de">Pakete ansehen</a>
+      </article>
+    </div>
+    <p class="pricing-note">Käufe über den App Store. Einmalzahlung pro Paket. Keine Abos. Keine Werbung. Zwei Kollektionen, Kinder und Erwachsene, mit allen Paketen für die jeweilige Gruppe in einem Kauf. Deine Kunstwerke werden über iCloud synchronisiert.</p>
+  </div>
+</section>
+
+<!-- ================= FAMILIES ================= -->
+<section class="section family" id="families">
+  <div class="wrap">
+    <div>
+      <div class="section-head">
+        <span class="kicker" style="--k:var(--coral)">Für Familien</span>
+        <h2>Ruhe von Anfang an</h2>
+        <p>Dibus ist gemacht, um es einem Kind in die Hand zu geben, ohne ständig auf den Bildschirm schauen zu müssen. Drin steckt nur Malen.</p>
+      </div>
+    </div>
+    <ul class="family-list">
+      <li><span class="dot" style="--c:var(--amarillo)"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4 4L19 7"/></svg></span>Keine Werbung</li>
+      <li><span class="dot" style="--c:var(--coral)"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4 4L19 7"/></svg></span>Keine Accounts, keine Anmeldung</li>
+      <li><span class="dot" style="--c:var(--verde)"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4 4L19 7"/></svg></span>Kein Tracking, egal welcher Art</li>
+      <li><span class="dot" style="--c:var(--morado)"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4 4L19 7"/></svg></span>Kunstwerke bleiben auf deinem Gerät oder in deiner iCloud</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ================= CTA ================= -->
+<section class="cta">
+  <div class="wrap">
+    <h2>Fangen wir mit dem Ausmalen an?</h2>
+    <p>Jetzt im App Store erhältlich, für iPhone und iPad. 12 kostenlose Ausmalbilder, 36 Pakete, zwei Kollektionen und das magische Ausmalbild mit Apple Intelligence.</p>
+    <a class="appstore" href="https://apps.apple.com/app/id6807736269?l=de"><img class="as-l" src="../img/app-store/de-black.svg" alt="Laden im App Store" width="144" height="48"><img class="as-d" src="../img/app-store/de-white.svg" alt="Laden im App Store" width="144" height="48"></a>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <p style="margin:0;font-weight:700">© 2026 SoftApp Solutions LLC</p>
+    <ul>
+      <li><a href="privacy.html">Datenschutz</a></li>
+      <li><a href="support.html">Support</a></li>
+    
+      <li><a href="https://freshtrack.softapp.tech/">FreshTrack</a></li>
+      <li><a href="https://devtoolbox.softapp.tech/">DevToolbox</a></li>
+      <li><a href="https://softapp.tech/">SoftApp Solutions</a></li>
+    </ul>
+  </div>
+</footer>
+
+<script src="../js/colorear.js?v=2" defer></script>
+</body>
+</html>
