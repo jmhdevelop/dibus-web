@@ -1,6 +1,6 @@
 # Dibus
 
-Web de **Dibus**, la app de colorear para niños de SoftApp Solutions.
+Web de **Dibus**, la app de colorear para iPhone y iPad de SoftApp Solutions: mandalas, vitrales, ilusiones ópticas y lámina mágica con Apple Intelligence.
 
 - Web: https://dibus.softapp.tech/ · [English](https://dibus.softapp.tech/en/)
 - [Privacidad](https://dibus.softapp.tech/privacidad.html) · [Soporte](https://dibus.softapp.tech/soporte.html)
