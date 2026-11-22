@@ -236,7 +236,7 @@ p{margin:0 0 1em}
 .magic-result{position:relative;width:min(100%,360px)}
 .magic-result img{border:var(--line) solid var(--ink);border-radius:var(--r);background:#fff;box-shadow:var(--shadow)}
 .stamp{
-  position:absolute;right:-14px;bottom:18px;transform:rotate(-8deg);
+  position:absolute;right:-14px;bottom:56px;transform:rotate(-8deg);
   background:var(--verde);color:#141414;border:var(--line) solid #141414;border-radius:999px;
   padding:.4rem .9rem;font-family:var(--display);font-weight:700;box-shadow:3px 3px 0 #141414;font-size:.95rem;
 }
